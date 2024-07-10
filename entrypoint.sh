@@ -10,12 +10,7 @@ then
 fi
 
 
-if [ "$ENVS" ]
-then
-    ENV_FLAG="--set-env-vars $ENVS"
-else
-    ENV_FLAG="--clear-env-vars"
-fi
+ENV_FLAG=""
 
 
 if [ "$INPUT_CLOUD_SQL" ]
